@@ -11,7 +11,7 @@ export default defineConfig({
     },
   },
   plugins: [react()],
-  base: "/Personal_Portfolio_Webiste/",
+  base: "/Webiste/",
   resolve: {
     alias: {
       "@": path.resolve(__dirname, "./src"),
