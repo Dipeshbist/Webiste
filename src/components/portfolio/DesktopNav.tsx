@@ -23,9 +23,14 @@ export function DesktopNav({ activeSection, onNavigate }: DesktopNavProps) {
         <div className="flex h-16 items-center justify-between">
           <button
             onClick={() => onNavigate("home")}
-            className="text-sm font-medium text-foreground transition-colors hover:text-primary"
+            className="flex items-center transition-opacity hover:opacity-80"
+            aria-label="Go to home"
           >
-            Dipesh Bist
+            <img
+              src={`${import.meta.env.BASE_URL}Portfolio%20Logo.png`}
+              alt="Dipesh Bist"
+              className="h-8 w-auto object-contain lg:h-10"
+            />
           </button>
 
           <nav className="flex items-center gap-8">

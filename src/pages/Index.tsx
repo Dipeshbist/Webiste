@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import { MobileNav } from "@/components/portfolio/MobileNav";
+import { MobileHeader } from "@/components/portfolio/MobileHeader";
 import { DesktopNav } from "@/components/portfolio/DesktopNav";
 import { HeroSection } from "@/components/portfolio/HeroSection";
 import { ExpertiseSection } from "@/components/portfolio/ExpertiseSection";
@@ -48,6 +49,7 @@ const Index = () => {
   return (
     <div className="min-h-screen overflow-x-hidden bg-background">
       <DesktopNav activeSection={activeSection} onNavigate={handleNavigate} />
+      <MobileHeader onNavigate={handleNavigate} />
       <MobileNav activeSection={activeSection} onNavigate={handleNavigate} />
 
       <main>
