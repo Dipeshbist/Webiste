@@ -11,11 +11,10 @@ export default defineConfig({
     },
   },
   plugins: [react()],
-  base: "/",
+  base: "/Webiste/",
   resolve: {
     alias: {
       "@": path.resolve(__dirname, "./src"),
     },
   },
 });
-
